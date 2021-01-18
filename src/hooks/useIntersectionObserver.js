@@ -12,15 +12,12 @@ const useIntersectionObserver = (reference) => {
       }
     }
 
-		// Create the observer, passing in the callback
     const observer = new IntersectionObserver(handleIntersect);
 
-		// If we have a ref value, start observing it
     if (reference) {
       observer.observe(reference.current);
     }
 
-    // If unmounting, disconnect the observer
     return () => observer.disconnect();
   }, [reference]);
 

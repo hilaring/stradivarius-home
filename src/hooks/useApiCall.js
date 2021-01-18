@@ -13,7 +13,6 @@ export default function useApiCall(apiCallUseCase) {
 
     try {
       const data = await apiCalls[apiCallUseCase]();
-      console.log('data', data);
       setResponse({loading: false, data, error: null});
     } catch (error) {
       setResponse({loading: false, data: null, error})

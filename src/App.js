@@ -1,6 +1,5 @@
 import React, { Suspense, lazy, useRef } from 'react'
 import useIntersectionObserver from './hooks/useIntersectionObserver'
-
 import './App.css';
 
 // const HeadSection = lazy(() => import('./components/Head'));
@@ -20,13 +19,15 @@ function App() {
       <div className="head">
         <img src="https://static.e-stradivarius.net/5/static2/itxwebstandard/logo/logo.png?t=20210118023002269000767" alt="Stradivarius" />
       </div>
-      <section className="slider" ref={sliderRef}>
-        {isSliderVisible && (
-          <Suspense fallback={<div className="loading">Loading...</div>}>
-            <SliderSection />
-          </Suspense>
-        )}
-      </section>
+      <div className="container">
+        <section className="slider" ref={sliderRef}>
+          {isSliderVisible && (
+            <Suspense fallback={<div className="loading">Loading...</div>}>
+              <SliderSection />
+            </Suspense>
+          )}
+        </section>
+      </div>
       <section className="cards" ref={cardsSectionRef}>
         {isCardsSectionVisible && (
           <Suspense fallback={<div className="loading">Loading...</div>}>

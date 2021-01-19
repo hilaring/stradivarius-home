@@ -12,9 +12,14 @@ const Slider = () => {
             {loading && <div><h2>Loading...</h2></div>}
             {error && <p>Something is wrong! 🙁</p>}
             {data &&
-                <div className="slider-content">
+            <>
+                <div className="slider-content slides-1">
                     <h1>{data}</h1>
                 </div>
+                <div className="slider-content slides-2">
+                    <h1>{data}</h1>
+                </div>
+            </>
             }        
         </>
     );

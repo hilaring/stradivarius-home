@@ -14,6 +14,7 @@ code {
 
 .head {
   padding: 10px 0px;
+  max-width: 100vw;
 }
 
 h1 {
@@ -32,21 +33,25 @@ h2 {
   font-weight: 400;
 }
 
+/* .slide-box {
+  display: flex;
+} */
+
 .slider {
   min-height: calc(100vh - 63px);
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .slider-content {
-  min-width: 100%;
+  width: 100%;
   min-height: inherit;
   background-image: url('https://static.e-stradivarius.net/5/static2/homes/2020_rebajas_OI_2/img/mkt-w/1920/rebajas/2400_bestof.jpg?t=20210118023001') !important;
   background-size: cover;               
   background-repeat: no-repeat;
   background-position: center center;   
   display: flex;
+  flex-shrink: 0 !important;
   align-items: center;
   justify-content: center;
 }

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import useApiCall from '../hooks/useApiCall';
 
 const Slider = () => {
-    const [response, executeApiCall] = useApiCall('getTitle');
+    const [response, executeApiCall] = useApiCall('getBackgroundSlider');
     const {loading, data, error} = response;
 
     useEffect(executeApiCall, [])
@@ -12,9 +12,9 @@ const Slider = () => {
             {loading && <div><h2>Loading...</h2></div>}
             {error && <p>Something is wrong! 🙁</p>}
             {data &&
-                <div className="slider-content">
-                    <h1>{data}</h1>
-                </div>
+                <div className="head">
+                    <img src={data} alt="Stradivarius" />
+              </div>
             }        
         </>
     );

@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.head {
+  padding: 10px 0px;
+}
+
+h1 {
+  font-size: 9vw;
+  line-height: 9vw;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 6vw;
+  line-height: 6vw;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.slider {
+  min-height: calc(100vh - 63px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-content {
+  min-width: 100%;
+  min-height: inherit;
+  background-image: url('https://static.e-stradivarius.net/5/static2/homes/2020_rebajas_OI_2/img/mkt-w/1920/rebajas/2400_bestof.jpg?t=20210118023001') !important;
+  background-size: cover;               
+  background-repeat: no-repeat;
+  background-position: center center;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sales-content {
+  min-width: 100%;
+  min-height: calc(50vh - 63px);
+  background-image: url('https://static.e-stradivarius.net/5/static2/homes/2020_rebajas_OI_2/img/mkt-w/768/rebajas/1200_bestof.jpg?t=20210119024501') !important;
+  background-size: cover;               
+  background-repeat: no-repeat;
+  background-position: center center;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
